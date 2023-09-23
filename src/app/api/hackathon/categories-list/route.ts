@@ -44,6 +44,8 @@ export async function GET(req: Request) {
         })
     }catch(err) {
         console.log(err)
-        return err;
+        return new Response(JSON.stringify({msg: 'error', succeeded: false}), {
+            status: 400
+        })
     }
 }
