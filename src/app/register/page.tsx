@@ -51,7 +51,7 @@ export default function RegisterPage() {
     function handleUpdateRegistration(e: FormEvent<HTMLInputElement> | FormEvent<HTMLTextAreaElement> | ChangeEvent<HTMLInputElement>) {
         const target = e.target as HTMLInputElement;
 
-        console.log(registration)
+        // console.log(registration)
         if(!target.name) return
 
         if(target?.type === 'checkbox') {
