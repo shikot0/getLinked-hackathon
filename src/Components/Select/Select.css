@@ -1,0 +1,47 @@
+.select-wrapper {
+    position: relative;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    resize: none;
+    padding: .25rem;
+    font-size: .9rem;
+    border-radius: .25rem;
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    background-color: transparent;
+}
+.select-options-wrapper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    translate: 0% 90%;
+    background-color: var(--page-bg-color);
+    border: 1px solid white;
+    border-radius: .25rem;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none; 
+}
+.select-options-wrapper.visible {
+    opacity: 1;
+    pointer-events: all; 
+    translate: 0% calc(100% + .5rem);
+}
+.select svg {
+    fill: white;
+    width: 1rem;
+}
+.option {
+    padding: 0 .25rem;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
