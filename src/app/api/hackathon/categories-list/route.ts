@@ -31,6 +31,9 @@ export async function GET(req: Request) {
 
         const categories = await Categories.find();
 
+        // return new Response(JSON.stringify({categories, succeeded: true}), {
+        //     status: 200
+        // })
         return new Response(JSON.stringify({categories, succeeded: true}), {
             status: 200
         })
