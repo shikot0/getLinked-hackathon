@@ -68,7 +68,7 @@ export default function RegisterPage() {
     function getCategories() {
         fetch(`${API_URL}/hackathon/categories-list`, {
             method: 'GET',
-            cache: 'no-store',
+            cache: 'no-store'
         })
         .then(res => res.json())
         .then(data => {

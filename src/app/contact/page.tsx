@@ -51,7 +51,7 @@ export default function ContactPage() {
 
         toast.promise(toastPromise, {
             loading: 'Connecting to server',
-            success: (data) => {
+            success: () => {
                 return `Your message was sent`
             },
             error: 'There has been an error'

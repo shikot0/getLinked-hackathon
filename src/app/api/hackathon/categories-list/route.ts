@@ -34,6 +34,11 @@ export async function GET(req: Request) {
         // return new Response(JSON.stringify({categories, succeeded: true}), {
         //     status: 200
         // })
+        if(!categories) {
+            return new Response(JSON.stringify({msg: 'error', succeeded: false}), {
+                status: 400
+            })
+        }
         return new Response(JSON.stringify({categories, succeeded: true}), {
             status: 200
         })
