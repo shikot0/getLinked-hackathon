@@ -1,4 +1,4 @@
-import Categories from "@/Models/Categories";
+import Categories from "@/Models/categoryModel";
 import connectMongo from "@/utils/connectMongo";
 
 // export async function GET(req: Request) {

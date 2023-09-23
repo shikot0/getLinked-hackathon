@@ -1,4 +1,4 @@
-import Registrations from "@/Models/Registrations";
+import Registrations from "@/Models/registrationModel";
 import connectMongo from "@/utils/connectMongo";
 
 export async function POST(req: Request) {

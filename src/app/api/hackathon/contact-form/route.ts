@@ -1,4 +1,4 @@
-import Contacts from "@/Models/Contacts";
+import Contacts from "@/Models/contactModel";
 import connectMongo from "@/utils/connectMongo";
 
 export async function POST(req: Request) {
