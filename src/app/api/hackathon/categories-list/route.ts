@@ -5,7 +5,7 @@ export async function GET(req: Request) {
     try {
         await connectMongo();
 
-        const categories = await Categories.find();
+        const categories = await Categories.find({});
 
         if(categories) {
             return new Response(JSON.stringify({categories, succeeded: true}), {
